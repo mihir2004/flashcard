@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "postinstall": "prisma generate"
+    "postinstall": "./node_modules/.bin/prisma generate"
   },
   "author": "Mihir kasare",
   "license": "ISC",
@@ -27,6 +27,7 @@
     "@babel/cli": "^7.24.8",
     "@babel/core": "^7.25.2",
     "@babel/node": "^7.25.0",
-    "@babel/preset-env": "^7.25.3"
+    "@babel/preset-env": "^7.25.3",
+    "prisma": "^5.18.0"
   }
 }
