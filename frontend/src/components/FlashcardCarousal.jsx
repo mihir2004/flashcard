@@ -9,7 +9,10 @@ export default function FlashcardCarousel() {
   useEffect(() => {
     const fetchFlashcards = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/questions");
+        const response = await axios.get(
+          "https://flashcard-xlwk.onrender.com/api/questions"
+        );
+        console.log(response.data);
         setFlashcards(response.data);
       } catch (error) {
         console.error("Error fetching flashcards:", error);
