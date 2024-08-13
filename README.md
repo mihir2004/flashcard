@@ -5,6 +5,7 @@ Welcome to the Flashcard Project! This web application allows users to create an
 ## Live Demo
 
 Check out the live version of the app: [Flashcard Application](https://flashcard-tuf-swe.vercel.app/)
+[Flashcard Dashboard](https://flashcard-tuf-swe.vercel.app/admin)
 
 ## Features
 
