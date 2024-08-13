@@ -12,7 +12,9 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/questions");
+        const response = await axios.get(
+          "https://flashcard-xlwk.onrender.com/api/questions"
+        );
         setQuestions(response.data);
       } catch (error) {
         console.error(error);
@@ -36,7 +38,7 @@ const Dashboard = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/questions/${editingQuestion.id}`,
+        `https://flashcard-xlwk.onrender.com/api/questions/${editingQuestion.id}`,
         {
           question: editingQuestion.question,
           answer: editingQuestion.answer,
@@ -61,7 +63,7 @@ const Dashboard = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/questions",
+        "https://flashcard-xlwk.onrender.com/api/questions",
         newQuestion
       );
       setQuestions([...questions, response.data]);
